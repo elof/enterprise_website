@@ -100,7 +100,7 @@ padding-<left|right>: <width of image>px; }
 .testimonial p.author { text-align: right; }
 
 .socials { background: url(images/socials-bg.png) repeat-x 0 0;  height: 49px;  }
-.socials-inner { background: url(images/socials-inner.png) repeat-x 0 0; padding-left: 158px;}
+.socials-inner { background: url(images/socials-inner.png) repeat-x 0 0; padding-left: 30%;}
 .socials h3 { float: left; font-size: 18px; line-height: 49px; padding-right: 19px; padding-bottom: 0; font-family: 'Ubuntu', sans-serif; font-weight: 500;  }
 .socials ul { list-style: none; list-style-position: outside; line-height: 49px;  }
 .socials ul li { font-size: 11px; padding-right: 18px;  color: #7c7c7c; background: transparent; text-transform: uppercase; float: left; }
