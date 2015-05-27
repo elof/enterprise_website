@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+	<title>taco.computer</title>
+	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css' />
+	<script src="js/jquery-1.8.0.min.js" type="text/javascript"></script>
+	<!-- // <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+	<script type="text/javascript" src="https://d26b395fwzu5fz.cloudfront.net/3.0.7/keen.min.js"></script>
+	<script type="text/javascript" src="js/common-web.min.js"></script>
+
+	<script type="text/javascript">
+    // nothing to see here
+		CommonWeb.Keen.Client = new Keen({
+		  projectId: "5563847fc1e0ab48c0e844f0",
+		  writeKey: "81dce749e66682c6301db1bc678ee4324d55f21c853963873801db28f26bc435d8d7af4bcd550ed7f6c05f5ddf7a005a95dcfda5171de4434aff9af6a378eebc975c45a7c1d14daf03ec3ce776537839cbc9d8db37370cd35a4b8f9ba6b9075ac5221bc8a8fb85efbafa7a750f06a953"
+		});
+		CommonWeb.addGlobalProperties(CommonWeb.Keen.globalProperties);
+		CommonWeb.Callback = CommonWeb.Keen.Callback;
+	</script>
+
+</head>
+<body>
+
+<div style='text-align:center; padding-top:100px;'>
+    <h2>What is a taco computer?</h2>
+    <img src="http://i.imgur.com/qeoNLVH.gif" alt="tacoComputer" style="">
+</div>
+
+	<script language="javascript">
+    CommonWeb.trackPageview();
+    CommonWeb.trackClicks();
+    CommonWeb.trackSession();
+    </script>
+
+</body>
+</html>
