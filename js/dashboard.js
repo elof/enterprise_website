@@ -19,6 +19,7 @@ Keen.ready(function(){
   });
   client.draw(pageviews_timeline, document.getElementById("grid-1-1"), {
     chartType: "columnchart",
+    colors: ["black"],
     title: false,
     height: "auto",
     width: "auto",
@@ -34,7 +35,7 @@ Keen.ready(function(){
     eventCollection: "pageviews",
   });
   client.draw(pageviews_timeline, document.getElementById("grid-1-2"), {
-    // chartType: "barchart",
+    colors: ["black"],
     title: false,
     height: "auto",
     width: "auto",
@@ -52,6 +53,7 @@ Keen.ready(function(){
   });
   client.draw(pageviews_timeline, document.getElementById("grid-3-1"), {
     chartType: "barchart",
+    colors: ["black"],
     title: false,
     height: "auto",
     width: "auto",
@@ -69,6 +71,7 @@ Keen.ready(function(){
   });
   client.draw(pageviews_timeline, document.getElementById("grid-2-2"), {
     chartType: "barchart",
+    colors: ["black"],
     title: false,
     height: "auto",
     width: "auto",
@@ -86,6 +89,7 @@ Keen.ready(function(){
   });
   client.draw(pageviews_timeline, document.getElementById("grid-2-3"), {
     chartType: "barchart",
+    colors: ["black"],
     title: false,
     height: "auto",
     width: "auto",
@@ -103,6 +107,7 @@ Keen.ready(function(){
   });
   client.draw(pageviews_timeline, document.getElementById("grid-2-1"), {
     chartType: "barchart",
+    colors: ["black"],
     title: false,
     height: "auto",
     width: "auto",
@@ -121,6 +126,7 @@ Keen.ready(function(){
   });
   client.draw(pageviews_timeline, document.getElementById("grid-3-2"), {
     chartType: "linechart",
+    colors: ["black"],
     title: false,
     height: "auto",
     width: "auto",
