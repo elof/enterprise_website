@@ -15,7 +15,8 @@ Keen.ready(function(){
   // ----------------------------------------
   var pageviews_timeline = new Keen.Query("count", {
     eventCollection: "clicks",
-    groupBy: "element.text"
+    groupBy: "element.text",
+    maxAge: "10800"
   });
   client.draw(pageviews_timeline, document.getElementById("grid-1-1"), {
     chartType: "columnchart",
@@ -33,6 +34,7 @@ Keen.ready(function(){
 
   var pageviews_timeline = new Keen.Query("count", {
     eventCollection: "pageviews",
+    maxAge: "10800"
   });
   client.draw(pageviews_timeline, document.getElementById("grid-1-2"), {
     colors: ["black"],
@@ -49,7 +51,8 @@ Keen.ready(function(){
 
   var pageviews_timeline = new Keen.Query("count", {
     eventCollection: "pageviews",
-    groupBy: "ip_geo_info.city"
+    groupBy: "ip_geo_info.city",
+    maxAge: "10800"
   });
   client.draw(pageviews_timeline, document.getElementById("grid-3-1"), {
     chartType: "barchart",
@@ -67,7 +70,8 @@ Keen.ready(function(){
 
   var pageviews_timeline = new Keen.Query("count", {
     eventCollection: "pageviews",
-    groupBy: "referrer_info.medium"
+    groupBy: "referrer_info.medium",
+    maxAge: "10800"
   });
   client.draw(pageviews_timeline, document.getElementById("grid-2-2"), {
     chartType: "barchart",
@@ -85,7 +89,8 @@ Keen.ready(function(){
 
   var pageviews_timeline = new Keen.Query("count", {
     eventCollection: "pageviews",
-    groupBy: "referrer_url"
+    groupBy: "referrer_url",
+    maxAge: "10800"
   });
   client.draw(pageviews_timeline, document.getElementById("grid-2-3"), {
     chartType: "barchart",
@@ -103,7 +108,8 @@ Keen.ready(function(){
 
   var pageviews_timeline = new Keen.Query("count", {
     eventCollection: "pageviews",
-    groupBy: "ip_geo_info.country"
+    groupBy: "ip_geo_info.country",
+    maxAge: "10800"
   });
   client.draw(pageviews_timeline, document.getElementById("grid-2-1"), {
     chartType: "barchart",
@@ -122,7 +128,8 @@ Keen.ready(function(){
   var pageviews_timeline = new Keen.Query("count", {
     eventCollection: "pageviews",
     timeframe: "this_month",
-    interval: "daily"
+    interval: "daily",
+    maxAge: "10800"
   });
   client.draw(pageviews_timeline, document.getElementById("grid-3-2"), {
     chartType: "linechart",
