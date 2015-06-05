@@ -22,8 +22,6 @@ Keen.ready(function(){
     chartType: "columnchart",
     colors: ["black"],
     title: false,
-    height: "auto",
-    width: "auto",
     chartOptions: {
       chartArea: {
           //options
@@ -39,8 +37,6 @@ Keen.ready(function(){
   client.draw(pageviews_timeline, document.getElementById("grid-1-2"), {
     colors: ["black"],
     title: false,
-    height: "auto",
-    width: "auto",
     chartOptions: {
       chartArea: {
           //options
@@ -58,8 +54,6 @@ Keen.ready(function(){
     chartType: "barchart",
     colors: ["black"],
     title: false,
-    height: "auto",
-    width: "auto",
     chartOptions: {
       chartArea: {
           //options
@@ -77,8 +71,6 @@ Keen.ready(function(){
     chartType: "barchart",
     colors: ["black"],
     title: false,
-    height: "auto",
-    width: "auto",
     chartOptions: {
       chartArea: {
           //options
@@ -96,8 +88,6 @@ Keen.ready(function(){
     chartType: "barchart",
     colors: ["black"],
     title: false,
-    height: "auto",
-    width: "auto",
     chartOptions: {
       chartArea: {
           //options
@@ -115,8 +105,6 @@ Keen.ready(function(){
     chartType: "barchart",
     colors: ["black"],
     title: false,
-    height: "auto",
-    width: "auto",
     chartOptions: {
       chartArea: {
           //options
@@ -135,8 +123,6 @@ Keen.ready(function(){
     chartType: "linechart",
     colors: ["black"],
     title: false,
-    height: "auto",
-    width: "auto",
     chartOptions: {
       chartArea: {
           //options
