@@ -31,6 +31,8 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2">
+        <h1>ROLES & RESPONSIBILITIES OF A SUCCESSFUL ANALYTICS TEAM</h1><br>
+        <p><a href="https://twitter.com/michellewetzler">Michelle Wetzler</a> wrote this post on November 24, 2015</p><br>
         <p>After years of working with hundreds of companies, I've learned a thing or two about what makes analytics projects successful. I've also watched many projects fail.</p>
         <p>The most common reason for failure might surprise you. It’s not a lack of data expertise or an integration mistake. It’s simply that the organization forgot to make it anyone’s responsibility to make use of their data. Far too many companies collect months and months of interesting data only to have it sitting in the corner collecting dust. That's what compelled me to write this guide and hopefully inspire you to add a little bit of structure to your next project. Your analytics implementation should be a wellspring of business value that you tap again and again.</p>
         <p>If you can find at least one person who is excited to take on each of the roles I’ve outlined below, I promise your project will be 1000x* more likely to succeed. Not all of these roles need to be fulltime, and one person could certainly play more than one part (or even all parts)! More detailed role descriptions &amp; tips following.</p>
@@ -38,7 +40,7 @@
         <p><img src="http://cl.ly/image/3V1q1a3B3i0M/22506109386_392e9d5ff2_z.jpg" alt="Data Team" title="Data Team">
         <em>Photo credit to the wonderful folks #WOCinTechChat</em></p>
         <hr>
-        <p>##<a name="lead" id="lead"></a>Roles &amp; Their Outputs</p>
+        <p><h3>Roles &amp; Their Outputs</h3></p>
         <hr>
         <table>
         <thead>
@@ -53,7 +55,7 @@
         </tbody>
         </table>
         <hr>
-        <p>##<a name="lead"></a>Project Lead
+        <p><a name="lead"></a><h3>Project Lead</h3>
         A single individual should be responsible for the delivery of your initial analytics implementation. You probably already know what an effective project manager does:</p>
         <ul>
         <li>Identifies the project’s stakeholders and figures out what they need. They ask, “What are the specific business questions we want to answer?”</li>
@@ -68,7 +70,7 @@
         <li>Keep the scope of your project as small as possible. Start with tracking only a few key actions that are important to your business so you can quickly answer the most pressing business questions (e.g. what is our retention like for customers who use this feature?). Your immediate, helpful results will get your organization hooked and they’ll soon come up with more questions that you can tackle in the next sprint. In other words: analytics work should be done in an agile fashion, becoming a little bit more in-depth with each iteration. If the scope of your analytics project gets too big (e.g. taking two weeks of engineer time), you risk the entire thing getting put on hold in favor of a pressing product feature or some other business priority.</li>
         </ul>
         <hr>
-        <p>##<a name="architect" id="architect"></a>Data Architect
+        <p><a name="architect" id="architect"></a><h3>Data Architect</h3>
         This is a fancy title but it just means that your team needs someone somewhat technical to create your data model and understand how querying the data works. The data model can be as simple as an email that lists what key actions you'll track and what properties you'll include on them. The model helps define and communicate the scope of your project. The data architect helps the team assess what business questions are possible to answer vs versus those that are not. This person is typically not a data science PhD. This role is most commonly filled by one of your app developers or someone adept at modeling things in spreadsheets.</p>
         <p>Tips for the Data Architect:</p>
         <ul>
@@ -78,7 +80,7 @@
         <li>Don't reinvent the wheel. If you’re building on Keen, please check out our <a href="https://keen.io/guides/data-modeling-guide/">Data Modeling Guide</a> and <a href="https://keen.io/guides/data-modeling-guide-200/">Best Practices</a> to learn some tricks and avoid the common pitfalls. If you're starting a business-critical implementation, pair with one of our data architects.</li>
         </ul>
         <hr>
-        <p>##<a name="productdev" id="productdev"></a>Product Developer
+        <p><a name="productdev" id="productdev"></a><h3>Product Developer</h3>
         At least one of your product developers has some pretty straightforward responsibilities at the beginning of your project: get tracking set up. They will add bits of code here and there so that every time a login, purchase, upload, or other action happens that you are able to collect data. If you have many sources of events, say your mobile app and your website, then this work might be done by multiple developers (e.g. a web dev and a mobile dev). In a small organization, the developer who sets up tracking often also plays the role of Data Architect. In larger groups, your developers should work closely with a Data Architect to make sure they model data optimally and that things are tracked and labeled in a consistent format (e.g. &quot;user.id&quot; = &quot;23cv42343jk88&quot; not &quot;user.id&quot; = &quot;fran@cooldomain.com&quot;). Setting up tracking is a relatively straightforward process as most analytics services provide drop-in client libraries to greatly simplify the effort, but your team still has to do the work of deciding what to track and how to name things.</p>
         <p>Tips for the developer implementing tracking:</p>
         <ul>
@@ -88,7 +90,7 @@
         <li>Here is an inventory of <a href="https://keen.io/docs/sdks/">tracking SDKs</a> that work with Keen IO.</li>
         </ul>
         <hr>
-        <p>##<a name="analyst" id="analyst"></a>Analyst(s)
+        <p><a name="analyst" id="analyst"></a><h3>Analyst(s)</h3>
         You’re going to be collecting lots of interesting data, but it won’t be very valuable unless someone uses it! You'll need at least one person on your team who is very <strong>curious</strong> about what that data might reveal. I call these people analysts. Very often the analyst is a developer, product manager, or someone on the product or marketing team. Not only will these folks be dying to see the results of the business questions they set out to answer, they will be continuously thinking up new questions. Analysts love digging into the data you collected in the first phase of the project and will have a lot of ideas of what new things you can collect in the next phase. In other words, you need people on your team who <strong>enjoy</strong> the practice of analytics. Don't worry, there are lots of people out there who do :). Having a technical background will be a huge asset for this person as they will quickly learn how to build queries to get the results they need. This role is absolutely critical for your success because if you don't have people who want to learn from your data, you won't be able to extract any value from it.</p>
         <p>Tips for the Analyst:</p>
         <ul>
@@ -98,7 +100,7 @@
         <li>If analysis work is something you repeatedly run out of time to do, try getting it added to your official job description and dedicating a certain number of hours per week or per month to it. Block it off on your calendar.</li>
         </ul>
         <hr>
-        <p>##<a name="reportdev" id="reportdev"></a>Reporting Developer
+        <p><a name="reportdev" id="reportdev"></a><h3>Reporting Developer</h3>
         This role is optional, but you may want to build out some reports that can be easily accessed across the team or by other stakeholders. You can greatly increase the utility of your data by incorporating it more closely into your business workflows, rather than leaving it trapped in a database where people have to remember to login to check it. A front-end developer will be able to turn queries into a reports for product managers and others across the business. As an example, you may find your results are most useful:</p>
         <ul>
         <li>emailed weekly in a summary report <a href="https://keen.io/guides/nightly-report-with-pushpop/" title="Create a weekly email with Pushpop">(example)</a></li>
@@ -116,7 +118,7 @@
         <li>Have fun! Watching someone's eyes light up when they discover something new is the best part of the whole analytics project, and you're often the one helping bring that realization to life.</li>
         </ul>
         <hr>
-        <p>Starting an important new implementation and need some help? Our team of data architects has done this lots of times and can answer any questions you have! Just drop us a note using Keen's <a href="https://keen.io/support/">support channels</a>.</p>
+        <p>Starting an important new implementation and need some help? The <a href="https://keen.io">Keen IO</a> team of data architects has done this lots of times and can answer any questions you have! Just them a note using Keen's <a href="https://keen.io/support/">support channels</a>.</p>
       </div>
     </div>
   </div>
