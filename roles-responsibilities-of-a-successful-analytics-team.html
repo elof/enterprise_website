@@ -10,10 +10,11 @@
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css' />
 	<script src="js/jquery-1.8.0.min.js" type="text/javascript"></script>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://d26b395fwzu5fz.cloudfront.net/3.0.7/keen.min.js"></script>
 	<script type="text/javascript" src="js/common-web.min.js"></script>
+	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 
 	<script type="text/javascript">
     // nothing to see here
@@ -30,9 +31,11 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-8 col-sm-offset-2">
+      <div class="col-sm-8 col-sm-offset-2" id="content">
         <h1>ROLES & RESPONSIBILITIES OF A SUCCESSFUL ANALYTICS TEAM</h1><br>
         <p><a href="https://twitter.com/michellewetzler">Michelle Wetzler</a> wrote this post on November 24, 2015</p><br>
+        <input onclick='var text = $("body").text();
+        responsiveVoice.speak(text, "US English Female", {rate: 1.5});' type='button' value='🔊 Play' />
         <p>After years of working with hundreds of companies, I've learned a thing or two about what makes analytics projects successful. I've also watched many projects fail.</p>
         <p>The most common reason for failure might surprise you. It’s not a lack of data expertise or an integration mistake. It’s simply that the organization forgot to make it anyone’s responsibility to make use of their data. Far too many companies collect months and months of interesting data only to have it sitting in the corner collecting dust. That's what compelled me to write this guide and hopefully inspire you to add a little bit of structure to your next project. Your analytics implementation should be a wellspring of business value that you tap again and again.</p>
         <p>If you can find at least one person who is excited to take on each of the roles I’ve outlined below, I promise your project will be 1000x* more likely to succeed. Not all of these roles need to be fulltime, and one person could certainly play more than one part (or even all parts)! More detailed role descriptions &amp; tips following.</p>
@@ -122,6 +125,12 @@
       </div>
     </div>
   </div>
+
+  <!-- <script type="text/javascript">
+    var voicelist = responsiveVoice.getVoices();
+    responsiveVoice.setDefaultVoice("US English Female");
+    var speak = responsiveVoice.speak("hello world");
+  </script> -->
 
 	<script language="javascript">
     CommonWeb.trackPageview();
