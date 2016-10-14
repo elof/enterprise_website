@@ -261,7 +261,7 @@
     CommonWeb.trackClicks();
     CommonWeb.trackSession();
 		mixpanel.track("pageview");
-		amplitude.logEvent("pageview");
+    amplitude.getInstance().logEvent('pageview');		
 		analytics.page();
   </script>
 
