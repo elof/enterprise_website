@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: taco.computer
+Token: 8c469ef74053a3a4fa0a01641271985d6a031e358087e354d3d18f68c215e96b
